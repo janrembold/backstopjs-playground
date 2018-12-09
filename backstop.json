@@ -36,11 +36,11 @@
     }
   ],
   "paths": {
-    "bitmaps_reference": "test/backstop/bitmaps_reference",
-    "bitmaps_test": "test/backstop/bitmaps_test",
-    "engine_scripts": "test/backstop/engine_scripts",
-    "html_report": "test/backstop/html_report",
-    "ci_report": "test/backstop/ci_report"
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
   },
   "report": ["browser"],
   "engine": "puppeteer",
@@ -49,6 +49,6 @@
   },
   "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
-  "debug": true,
+  "debug": false,
   "debugWindow": false
 }

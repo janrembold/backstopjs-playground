@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "backstopjs": "^3.8.5",
+    "global": "^4.3.2",
+    "npm": "^6.4.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
@@ -14,8 +16,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "backstop:init": "backstop init",
-    "backstop:test": "backstop test",
-    "backstop:approve": "backstop approve"
+    "backstop:test": "backstop test --config=backstop.js --docker",
+    "backstop:approve": "backstop approve --config=backstop.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -25,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "resolutions": {
+    "**/eslint": "5.6.0"
+  }
 }
